@@ -1,0 +1,22 @@
+.seekbar{
+    position: fixed;
+    left: 880px;
+}
+#bar{
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    height: 8px;
+    width: 400px;
+    border-radius: 5px;
+}
+.current-time{
+       position: absolute;
+       left: 840px;
+       font-size: 18px;
+}
+.duration{
+    position:absolute;
+    left: 1300px;
+    font-size: 18px;
+}
