@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
-function SayHi(uname) {
+function SayHi(value) {
     useEffect(()=>{
-        console.log(`${uname}你好`)
+        console.log(`${value.name}你好`)
     },[])
   return  (
     null
