@@ -1,11 +1,24 @@
 import React from "react";
 import { useEffect } from "react";
-function SayHi(value) {
-    useEffect(()=>{
-        console.log(`${value.name}你好`)
-    },[])
+function SayHi(props) {
+ useEffect(()=>{
+  console.log(props.name+"hi react")
+  console.log(props.age+"可以")
+  console.log(`${props.myname}成功啦`)
+ },[])
   return  (
-    null
+    <div>
+    <span>
+      {
+        `this is ${props.myname}`
+      }
+    </span>
+    {
+    `this is front-end?
+    ${props.obj.uname}`
+  }
+    </div>
+   
   )
 }
 

@@ -1,0 +1,32 @@
+.reply-list{
+    font-size: 30px;
+    color: skyblue;
+
+}
+.il{
+    list-style: none;
+}
+.btn{
+    color:blue;
+    width: 150px;
+    height: 60px;
+}
+.btn2{
+    margin-left: 200px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+.tabs{
+    margin-top: 100px;
+}
+p{
+    font-size: 30px;
+}
+.active{
+    color: skyblue;
+    font-size: 40px;
+}
+.h3{
+    color:aqua
+}

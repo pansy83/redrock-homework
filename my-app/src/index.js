@@ -4,11 +4,13 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 
-import App from './07_函数组件/App'
+
+import Example from './07_函数组件/Example';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <App/>
+  <Example/>
   
 );
 

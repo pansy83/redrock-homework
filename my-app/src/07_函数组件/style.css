@@ -1,0 +1,9 @@
+.btn{
+    width: 250px;
+    height: 160px;
+    border-radius: 5px;
+    color: blueviolet;
+    border-style: dotted;
+    border-color: pink; 
+    font-size: 30px;
+}

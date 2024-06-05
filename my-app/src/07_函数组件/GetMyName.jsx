@@ -24,7 +24,21 @@ function GetMyName() {
         <button className='btn' onClick={handleClick2}>
             -1
         </button>
-     <SayHi value={myName}/>
+     <SayHi 
+     name={'Pansy'}
+     age={18}
+     isTrue={false}
+     list={['vue','react']}
+     obj={{uname:'jack'}}
+     cb={()=>{
+      console.log(123)
+     }}
+     myname={myName}
+     child={<span>
+      this is span 
+     </span>
+     }
+     />
     </div>
   )
 }
