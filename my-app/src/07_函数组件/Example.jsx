@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './style2.css'
+import { useRef } from 'react';
 import orderBy from 'lodash/orderBy';
-const list=[{
+const list1=[{
     id:1,
     like:99,
     uname:'Pansy',
@@ -29,7 +30,9 @@ function Example() {
     const age=10
     const [type,setType]=useState('hot')
     const [uname,setUname]=useState('Pansy')
-    const [commentList,setCommentList]=useState(list)
+    const [commentList,setCommentList]=useState(list1)
+    const [value,setValue]=useState('')
+    
     const tabs=[
         {type:'hot',text:'最热'},
         {type:'time',text:'最新'}
@@ -72,6 +75,7 @@ function Example() {
         console.log(`${e}你好`)
         setUname(e)
     }
+    
   return (
     <div>
         <button onClick={handleClick}>Click me</button>
@@ -100,6 +104,16 @@ function Example() {
                 )
             )}
          </span>
+         <span>
+            {commentList.map(item=>
+                <li key={item.id}>{item.uname}</li>
+            )}
+         </span>
+         {{/* 受控绑定表单 */}}
+         <input type="text" 
+         value={value} 
+         onChange={(e)=>setValue(e.target.value)}/>
+        
         </div>
   )
 }
